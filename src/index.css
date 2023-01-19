@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "input";
+  src: url("../src//assets/InputMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "input-bold";
+  src: url("../src//assets/InputMono-Bold.ttf");
+}
