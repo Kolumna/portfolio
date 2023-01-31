@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import JGlogo from "../assets/svgs/JGlogo.svg";
 import openIcon from "../assets/svgs/openIcon.svg";
-import baner2 from "../assets/imgs/baner2.png"
+import baner2 from "../assets/imgs/baner2.png";
 import panorama from "../assets/imgs/okno.png";
 import { motion } from "framer-motion";
 import { useLang } from "./contexts/LangContext";
 
 const About = () => {
-  const polish = useLang() == "pl" ? true : false
+  const polish = useLang() == "pl" ? true : false;
 
   return (
     <motion.section
@@ -22,23 +22,23 @@ const About = () => {
               Game Development
             </span>
           </div>
-          <Link
+          <a
+            target="_blank"
             className="w-full hover:bg-slate-300 transition-all duration-200 flex justify-center items-center gap-4 h-1/3 bg-gray-300"
-            to="/"
+            href="https://janiecgames.netlify.app/"
           >
             <img className="w-64" src={JGlogo}></img>
             <img src={openIcon} />
-          </Link>
+          </a>
         </div>
         <div className="flex flex-col gap-8 justify-center items-center w-full h-96 bg-neutral-800 p-4 text-center">
           <span className="font-bold text-slate-200 text-4xl">
-            {polish ? "Startujemy!" : "We're starting!"}<span className=" font-sans">( ͡° ͜ʖ ͡°)</span>
+            {polish ? "Startujemy!" : "We're starting!"}
           </span>
           <p>
-            Styczność z game devem miałem już jakiś czas temu. Pierwsze gry
-            tworzyłem mając 13 lat. Aktualnie tworzę 2 gry: "SzmejeDungeons" i
-            "The Moon" w silniku Unreal Engine 5, jednak swoje początki miałem w
-            Unity.
+            {polish
+              ? 'Styczność z game devem miałem już jakiś czas temu. Pierwsze gry tworzyłem mając 13 lat. Aktualnie tworzę 2 gry: "SzmejeDungeons" i "The Moon" w silniku Unreal Engine 5, jednak swoje początki miałem w Unity.'
+              : 'I had contact with game dev some time ago. I made my first games when I was 13. Currently I am creating 2 games: "SzmejeDungeons" and "The Moon" in Unreal Engine 5, but I had my beginnings in Unity.'}
           </p>
           <div className="flex gap-4">
             <img
@@ -63,10 +63,9 @@ const About = () => {
             {"<h1>Hello world!</h1>"}
           </span>
           <p>
-            Moje początki webdevu sięgają 8. klasy szkoły podstawowej, w której
-            tworzyłem podstawowe strony z użyciem HTML'a i CSS'a. Dzisiaj
-            zajmuję się tworzeniem aplikacji webowych, gdzie moim głównym
-            językiem jest JavaScript{" "}
+            {polish
+              ? "Moje początki webdevu sięgają 8. klasy szkoły podstawowej, w której tworzyłem podstawowe strony z użyciem HTML'a i CSS'a. Dzisiaj zajmuję się tworzeniem aplikacji webowych, gdzie moim głównym językiem jest JavaScript."
+              : "My beginnings of webdev date back to the 8th grade of primary school, where I created basic websites using HTML and CSS. Today I am developing web applications, where my main language is JavaScript."}
           </p>
           <div className="flex gap-4">
             <img
@@ -110,11 +109,9 @@ const About = () => {
             3, 2, 1 Akcja!
           </span>
           <p>
-            Tworzenie filmów, animacji czy projektów aplikacji pozwala na
-            wizualizacje niemal wszystkiego. Zajmuję się montowaniem filmów i
-            tworzeniem animacji od nie dawna, lecz widzę jak niesamowite efekty
-            oferują dzisiejsze programy komputerowe i wiem, że dalej będę się w
-            tym rozwijać.
+            {polish
+              ? "Tworzenie filmów, animacji czy projektów aplikacji pozwala na wizualizacje niemal wszystkiego. Zajmuję się montowaniem filmów i tworzeniem animacji od nie dawna, lecz widzę jak niesamowite efekty oferują dzisiejsze programy komputerowe i wiem, że dalej będę się w tym rozwijać."
+              : "Creating movies, animations or application projects allows you to visualize almost anything. I have been editing films and creating animations for a long time, but I see the amazing effects offered by today's computer programs and I know that I will continue to develop in this field."}
           </p>
           <div className="flex gap-4">
             <img

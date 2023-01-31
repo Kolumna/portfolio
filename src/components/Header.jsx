@@ -1,4 +1,5 @@
 import sun from "../assets/svgs/sun.svg";
+import moon from "../assets/svgs/moon.svg";
 import language from "../assets/svgs/language.svg";
 import github from "../assets/svgs/github.svg";
 import inkledin from "../assets/svgs/inkledin.svg";
@@ -7,7 +8,6 @@ import { useLang, useLangUpdate } from "./contexts/LangContext";
 import { useTheme, useThemeUpdate } from "./contexts/ThemeContext";
 
 const Header = () => {
-
   //język
   const lang = useLang();
   const toggleLang = useLangUpdate();
@@ -37,15 +37,30 @@ const Header = () => {
       </Link>
       <div className="hidden xl:flex">
         <div className="flex items-center p-4 pr-8 pl-8 bg-slate-200">
-          <div className="flex gap-4">
-            <a target="_blank" href="https://www.linkedin.com/in/micha%C5%82-janiec-074640234/"><img src={inkledin} /></a>
-            <a target="_blank" href="https://github.com/Kolumna"><img src={github} /></a>
+          <div className="flex gap-8">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/micha%C5%82-janiec-074640234/"
+            >
+              <img src={inkledin} />
+            </a>
+            <a target="_blank" href="https://github.com/Kolumna">
+              <img src={github} />
+            </a>
           </div>
         </div>
         <div className="flex items-center p-4 pr-8 pl-8 bg-neutral-800">
-          <div className="flex gap-4">
-            <img className="cursor-pointer" onClick={darkToggle} src={sun} />
-            <img className="cursor-pointer" onClick={toggleLang} src={language} />
+          <div className="flex gap-8">
+            <img
+              className="cursor-pointer"
+              onClick={darkToggle}
+              src={dark ? moon : sun}
+            />
+            <img
+              className="cursor-pointer"
+              onClick={toggleLang}
+              src={language}
+            />
           </div>
         </div>
       </div>
