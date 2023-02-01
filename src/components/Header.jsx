@@ -28,7 +28,7 @@ const Header = () => {
             Michał Janiec<span className="animate-pulse">_</span>
           </span>
         </div>
-        <div className="bg-slate-200 h-full flex justify-center items-center pl-4 pr-4 cursor-pointer">
+        <div className="bg-slate-200 h-full flex justify-center items-center cursor-pointer pl-2 pr-2">
           <ul className="text-[0.4rem] p-1 lg:text-[0.7rem] font-input-black text-neutral-800">
             <li>FullStack Developer</li>
             <li>Game Developer</li>
