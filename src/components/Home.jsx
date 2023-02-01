@@ -16,7 +16,7 @@ const Home = () => {
         <h1 className="text-4xl lg:text-6xl font-input-bold">{polish ? "Cześć!" : "Hi!"}</h1>
         <p className="text-lg lg:text-2xl font-input">
           {polish
-            ? "Jestem pasjonatem technologii informatycznych od montowania filmów po tworzenie aplikacji. Bardzo lubię coś tworzyć, więc stąd się wzięło moje zamiłowanie do IT, ponieważ tu możliwości są nieskończone. Nie traktuję tego jako pracę tylko jako hobby, kocham po prostu to robić! Aktualnie pracuję nad swoimi dwoma projektami, JaniecTheme i JaniecGames. Jak chcesz się dowiedzieć więcej zapraszam "
+            ? "Jestem pasjonatem technologii informatycznych od montowania filmów po tworzenie aplikacji. Bardzo lubię coś tworzyć, więc stąd się wzięło moje zamiłowanie do IT, ponieważ tu możliwości są nieskończone. Nie traktuję tego jako pracę tylko jako hobby, kocham po prostu to robić! Aktualnie pracuję nad swoimi dwoma projektami, JaniecTheme i JaniecGames. Jeśli chcesz się dowiedzieć więcej, zapraszam "
             : "I am passionate about information technology, from editing videos to creating applications. I really like to create something, so that's where my passion for IT came from, because the possibilities here are endless. I don't treat it as a job but as a hobby, I just love doing it! I am currently working on my two projects, JaniecTheme and JaniecGames. If you want to know more please contact me "}
           <Link
             className="font-input-bold text-green-400 underline hover:text-zinc-500 dark:hover:text-slate-200 transition-colors duration-200"
