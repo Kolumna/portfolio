@@ -31,14 +31,14 @@ const About = () => {
             <img src={openIcon} />
           </a>
         </div>
-        <div className="flex flex-col gap-8 justify-center items-center w-full min-h-96 bg-neutral-800 p-4 text-center">
+        <div className="flex flex-col gap-8 justify-center items-center w-full min-h-96 bg-neutral-800 p-8 text-center">
           <span className="font-bold text-slate-200 text-2xl lg:text-4xl">
             {polish ? "Startujemy!" : "We're starting!"}
           </span>
           <p className="text-sm lg:text-md xl:text-lg">
             {polish
-              ? 'Styczność z game devem miałem już jakiś czas temu. Pierwsze gry tworzyłem mając 13 lat. Aktualnie tworzę 2 gry: "SzmejeDungeons" i "The Moon" w silniku Unreal Engine 5, jednak swoje początki miałem w Unity.'
-              : 'I had contact with game dev some time ago. I made my first games when I was 13. Currently I am creating 2 games: "SzmejeDungeons" and "The Moon" in Unreal Engine 5, but I had my beginnings in Unity.'}
+              ? 'Styczność z game devem miałem już jakiś czas temu. Pierwsze gry tworzyłem mając 12 lat. Aktualnie tworzę dwie gry: "SzmejeDungeons" i "The Moon" w silniku Unreal Engine 5, jednak swoje początki miałem w Unity.'
+              : 'I had contact with game dev some time ago. I made my first games when I was 12. Currently I am creating two games: "SzmejeDungeons" and "The Moon" in Unreal Engine 5, but I had my beginnings in Unity.'}
           </p>
           <div className="flex gap-4">
             <img
@@ -58,7 +58,22 @@ const About = () => {
         <div className="w-full lg:col-span-2 h-96">
           <img className="h-full w-full object-cover" src={panorama} />
         </div>
-        <div className="flex flex-col gap-8 justify-center items-center w-full min-h-96 bg-neutral-800 p-4 text-center">
+        <div className="flex flex-col justify-center items-center w-full lg:h-96 bg-slate-200">
+          <div className="flex h-2/3 justify-center items-center">
+            <span className="font-bold text-zinc-800 text-3xl text-center lg:text-5xl p-8">
+              Web Development
+            </span>
+          </div>
+          <a
+            className="w-full hover:bg-slate-300 transition-all duration-200 flex justify-center items-center gap-4 h-1/3 bg-gray-300 p-8"
+            href="https://www.janiectheme.site/"
+            target="_blank"
+          >
+            <span className="JTlogo text-xl lg:text-3xl">JaniecTheme</span>
+            <img className="" src={openIcon} />
+          </a>
+        </div>
+        <div className="flex flex-col gap-8 justify-center items-center w-full min-h-96 bg-neutral-800 p-8 text-center">
           <span className="font-bold text-slate-200 text-2xl lg:text-4xl">
             {"<h1>Hello!</h1>"}
           </span>
@@ -82,21 +97,6 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center w-full lg:h-96 bg-slate-200">
-          <div className="flex h-2/3 justify-center items-center">
-            <span className="font-bold text-zinc-800 text-3xl text-center lg:text-5xl p-8">
-              Web Development
-            </span>
-          </div>
-          <a
-            className="w-full hover:bg-slate-300 transition-all duration-200 flex justify-center items-center gap-4 h-1/3 bg-gray-300 p-8"
-            href="https://www.janiectheme.site/"
-            target="_blank"
-          >
-            <span className="JTlogo text-xl lg:text-3xl">JaniecTheme</span>
-            <img className="" src={openIcon} />
-          </a>
-        </div>
         {/* <div className="w-full flex justify-evenly items-center col-span-2 h-96 bg-black">
         </div> */}
         <div className="flex flex-col justify-center items-center w-full min-h-96 bg-slate-200">
@@ -104,7 +104,7 @@ const About = () => {
             <span className="font-bold text-zinc-800 text-3xl lg:text-5xl p-8">Creator</span>
           </div>
         </div>
-        <div className="flex flex-col gap-8 justify-center items-center w-full min-h-96 bg-neutral-800 p-4 text-center">
+        <div className="flex flex-col gap-8 justify-center items-center w-full min-h-96 bg-neutral-800 p-8 text-center">
           <span className="font-bold text-slate-200 text-2xl lg:text-4xl">
             3, 2, 1 Akcja!
           </span>
