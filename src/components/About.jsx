@@ -5,8 +5,16 @@ import baner2 from "../assets/imgs/baner2.png";
 import panorama from "../assets/imgs/okno.png";
 import { motion } from "framer-motion";
 import { useLang } from "./contexts/LangContext";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const About = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   const polish = useLang() == "pl" ? true : false;
 
   return (
