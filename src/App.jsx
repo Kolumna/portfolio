@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <main className={`w-full h-full transition-colors duration-200 ${!dark ? 'dark bg-neutral-900' : 'bg-slate-200'}`}>
-      <main className="min-h-screen p-12 text-slate-200 mx-auto max-w-[1920px]">
+      <main className="min-h-screen p-4 lg:p-12 text-slate-200 mx-auto max-w-[1920px]">
         <AnimatePresence>
           <Router>
             <Header />

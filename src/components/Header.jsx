@@ -19,16 +19,16 @@ const Header = () => {
   return (
     <header className="flex justify-between w-full mb-24">
       <Link
-        className="flex flex-col border-2 border-zinc-800 hover:border-slate-200  lg:flex-row justify-start select-none items-start lg:items-center"
+        className="flex w-full lg:w-auto flex-col border-2 border-zinc-800 hover:border-slate-200  lg:flex-row justify-start select-none items-start lg:items-center"
         to="/"
       >
-        <div className="p-4 pl-8 pr-36 bg-neutral-800">
-          <span className="font-bold text-2xl font-input-bold ">
+        <div className="p-4 pl-8 lg:pr-36 bg-neutral-800 w-full lg:w-auto">
+          <span className="font-bold text-lg lg:text-2xl font-input-bold ">
             Michał Janiec<span className="animate-pulse">_</span>
           </span>
         </div>
         <div className="bg-slate-200 h-full flex justify-center items-center pl-4 pr-4">
-          <ul className="text-[0.7rem] font-input-black text-neutral-800">
+          <ul className="text-[0.4rem] p-1 lg:text-[0.7rem] font-input-black text-neutral-800">
             <li>FullStack Developer</li>
             <li>Game Developer</li>
             <li>Creator</li>
